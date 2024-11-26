@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#c165dd ;
+    border-radius: 10px;
+}
+
+/* background-image: linear-gradient(to bottom right, #c165dd, #5c27fe); */
+
+.body {
+    background: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#Home {
+    background-image: linear-gradient(to bottom right, #c165dd, #5c27fe);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: transparent;
+}
+
+#header a {
+    /* text-decoration: none; */
+    position: relative;
+    color: #ffffff;
+    transition: 0.9s;
+    
+}
+
+#header a::before{
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    color: #ffffff;
+    background-color: white;
+    box-shadow: 0 0 0px 0px white;
+    transition:  all 0.6s;
+}
+
+#header a:hover::before{
+    width: 100%;
+    /* color: #c165dd;
+    background-color: white ; */
+    box-shadow: 0 0 50px 15px #c165dd;
+}
+
+#header a:hover {
+    color: white;
+   
+}
+
+#Homecontent {
+    overflow: hidden;
+    color: #ffffff;
+    padding: 50px 50px;
+}
+
+#Media {
+    padding: 20px 20px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    transform: center;
+    transition: 0.4s;
+}
+
+#Media img {
+    width: 40px;
+    height: 40px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin: 10px 10px;
+    box-shadow: 0 0 0px 0px #c165dd;
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+#Media img:hover {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 50px 15px #c165dd;
+    background-color: #5c27fe;
+    border-radius: 20px;
+}
+
+#DownloadBT {
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    margin-top: 30px;
+    width: 200px;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+#DownloadBT:hover {
+    color: #ffffff;
+    background-color: #c165dd;
+}
+
+#DownloadBT a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+#DownloadBT:hover a {
+    color: #ffffff;
+}
+
+#Services {
+    background-image: linear-gradient(to bottom left, #5c27fe, #c165dd);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#serv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c27fe;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#cards {
+    color: #ffffff;
+    background-color: #5c27fe;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards img {
+    transition: transform 0.5s;
+}
+
+#cards:hover img {
+    transform: scale(1.1);
+}
+
+#About {
+    background-image: linear-gradient(to bottom right, #c165dd, #5c27fe);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+#aboutcrd {
+    background-color: #5c27fe;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+#aboutcrd a {
+    text-decoration: none;
+    color: #c165dd;
+}
+
+#contactform {
+    padding: 20px 20px;
+    color: #ffffff;
+}
+
+#emailHelp {
+    color: #ffffff;
+}
+
+#msg {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#BMedia {
+    padding: 20px 20px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    transform: center;
+    transition: 0.4s;
+}
+
+#BMedia img {
+    width: 30px;
+    height: 30px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin: 10px 10px;
+    box-shadow: 0 0 0px 0px #c165dd;
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+#BMedia img:hover {
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 50px 15px #c165dd;
+    background-color: #5c27fe;
+    border-radius: 20px;
+}
+
+.popup{
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% , -50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    font-weight: 300w;
+    visibility: hidden;
+    box-shadow: 0 0 50px 15px #48abe0;
+    transition: transform 0.4s , top 0.4s;
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup button{
+     width: 100%;
+     margin-top: 10px;
+     padding: 10px 0;
+   
+     background-image: linear-gradient(to bottom right, #c165dd, #5c27fe);
+     color: #ffffff;
+     border: none;
+     border-radius: 5px;
+     font-size: 20px;
+     cursor: pointer;
+     box-shadow: 0 19px 20px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% , -50%) scale(1);
+}
+
+
+
+@media screen and (max-width: 440px) {
+    .popup{
+        width: 70%;
+        height: 37%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50% , -50%)scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        font-weight: 300w;
+        visibility: hidden;
+        transition: transform 0.4s , top 0.4s;
+    }
+    .popup img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .popup button{
+         width: 100%;
+         margin-top: 10px;
+         padding: 10px 0;
+       
+         background-image: linear-gradient(to bottom right, #c165dd, #5c27fe);
+         color: #ffffff;
+         border: none;
+         border-radius: 5px;
+         font-size: 20px;
+         cursor: pointer;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .open-popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50% , -50%) scale(1);
+    }
+
+    #tweeicon{
+        display: none;
+        visibility: hidden;
+    }
+    #fbicon{
+        display: none;
+        visibility: hidden;
+    }
+  }
+
