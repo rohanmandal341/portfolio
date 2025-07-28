@@ -29,7 +29,9 @@
   }
 
   #deskimg1{
-margin-left:150px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -81,9 +83,25 @@ margin-left:150px;
         <div class="row">
           <div class="col-md-12">
             <!-- ✅ PUT YOUR ACTUAL RESUME FILE IN /assets/ AND RENAME HERE -->
-            <h3 class="text-center" id="DownloadBT">
-              <a download href="assets/Rohan_Java_Devloper.pdf">Download CV</a>
-            </h3>
+           <h3 style="text-align: left; margin: 30px 0;">
+  <a download href="assets/Rohan_Java_Devloper.pdf" style="
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    color: #fff;
+    background: linear-gradient(135deg, #831574, #f145c3);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  " onmouseover="this.style.background='transparent'; this.style.color='#831574'; this.style.border='2px solid #831574';"
+     onmouseout="this.style.background='linear-gradient(135deg, #831574, #f145c3)'; this.style.color='#fff'; this.style.border='none';">
+    Download CV
+  </a>
+</h3>
+
+
           </div>
         </div>
       </div>
@@ -95,7 +113,7 @@ margin-left:150px;
 
         <div class="row">
           <div class="fluid-container" id="Media">
-            <a href="https://www.instagram.com/rohan1508__">
+            <a href="https://www.instagram.com/rohan1508__?igsh=MTRlbW00aXY1c3lzNA%3D%3D&utm_source=qr ">
               <img src="assets/Media/instagram (1) 1HomeScreen.png" alt="Instagram">
             </a>
             <a href="https://www.linkedin.com/in/rohan-mandal-3596a9257">
@@ -253,7 +271,7 @@ margin-left:150px;
             Email.send({
               Host: "smtp.elasticemail.com",
               Username: "rohanmandal9860@gmail.com",
-              Password: "YOUR_SMTP_PASSWORD",
+              Password: "D049DB7D65518FEF3CAD24E3F37590442532",
               To: 'rohanmandal9860@gmail.com',
               From: email,
               Subject: "Portfolio Contact",
